@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Component() {
@@ -9,9 +10,16 @@ export default function Component() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
           {/* Logo Section */}
-          <Link href="#" className="flex items-center" prefetch={false}>
-            <span className="ml-2 text-sm font-medium">Aideeya</span>
-          </Link>
+          <Link href="/">
+        <Image
+          src="/Logo.png"
+          alt="Aideeya Logo"
+          width={100}
+          height={100}
+          
+        />
+      
+    </Link>
 
           {/* Navigation Links */}
           <nav className="flex items-center gap-4 sm:gap-6">
